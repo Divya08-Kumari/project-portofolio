@@ -1,0 +1,235 @@
+/* #about{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.aboutTitle{
+    font-size: 3rem;
+    font-weight: 600;
+ padding-top: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+.aboutDesc{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+}
+.aboutBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.aboutBar{
+display: flex;
+margin: 1rem;
+padding: 1.5rem 2rem;
+border-radius: 0.5rem;
+background: rgb(40,40,40);
+
+}
+.aboutBar:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.aboutBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+.aboutBarText > p{
+    color: rgb(175,168,168,0.966);
+    font-size: 1rem;
+    font-weight: 200;
+}
+@media screen and (max-width: 720px){
+    .aboutBarText>p{
+        font-size: 2vw;
+
+    }
+}
+@media screen and (max-width: 580px){
+    .aboutBarText>p{
+        font-size: 3vw;
+
+    }
+    .aboutBarImg{
+        height: 2rem;
+        width: 2rem;
+    }
+    .aboutBarText>h2{
+        font-size: 4vw;
+
+    }
+    .aboutBarText>h3{
+        font-size: 4vw;
+    }
+    .aboutBarText>h4{
+        font-size: 4vw;
+    }
+    .aboutBarText>h5{
+        font-size: 4vw;
+    }
+    
+} 
+
+  */
+/* Base styles */
+#about {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    font-weight: 600;
+ padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    /* font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px; */
+}
+
+.aboutDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+    /* font-size: 1.2rem;
+    margin-bottom: 20px; */
+}
+
+.aboutBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+    /* //display: flex; */
+    /* flex-direction: column;  */
+    /* align-items: center; 
+    gap: 20px;  */
+}
+
+.aboutBar {
+    display: flex;
+margin: 1rem;
+padding: 1.5rem 2rem;
+border-radius: 0.5rem;
+background: rgb(40,40,40);
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin: 10px 0; / */
+}
+.aboutBar:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.aboutBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    /* width: 80px; 
+    height: 80px; 
+    margin-bottom: 10px;  */
+}
+
+.aboutBarText {
+    margin: 10px 0;
+}
+
+/* Media queries */
+
+/* Styles for large screens (e.g., desktop) */
+@media (min-width: 1024px) {
+    .aboutBars {
+        flex-direction: column; /* Remain in column layout for large screens */
+    }
+
+    .aboutBar {
+        margin: 20px 0; /* Increase margin on larger screens */
+    }
+
+    .aboutBarImg {
+        width: 100px; /* Larger image width */
+        height: 100px; /* Larger image height */
+    }
+
+    .aboutTitle {
+        font-size: 2.5rem;
+    }
+
+    .aboutDesc {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles for medium screens (e.g., tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .aboutBars {
+        flex-direction: column; /* Keep vertical layout for tablets */
+    }
+
+    .aboutBar {
+        margin: 15px 0; /* Adjust margin for medium screens */
+    }
+
+    .aboutBarImg {
+        width: 90px; /* Medium image width */
+        height: 90px; /* Medium image height */
+    }
+
+    .aboutTitle {
+        font-size: 2rem;
+    }
+
+    .aboutDesc {
+        font-size: 1.3rem;
+    }
+}
+
+/* Styles for small screens (e.g., mobile) */
+@media (max-width: 767px) {
+    .aboutBars {
+        flex-direction: column; /* Ensure vertical layout on mobile */
+    }
+
+    .aboutBar {
+        margin: 10px 0; /* Adjust margin for mobile screens */
+    }
+
+    .aboutBarImg {
+        width: 60px; /* Smaller image width */
+        height: 60px; /* Smaller image height */
+    }
+
+    .aboutTitle {
+        font-size: 1.5rem;
+    }
+
+    .aboutDesc {
+        font-size: 1rem;
+    }
+}
